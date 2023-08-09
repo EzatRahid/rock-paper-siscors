@@ -23,18 +23,18 @@ rock.addEventListener('click', () =>{
 
     let result = '';
     if(computer === 'rock'){
-        result = ' tie'
+        result = ' tie bruh'
     }
     if(computer === 'paper'){
-        result = ' you lose'
+        result = ' you lose haha loser'
     }
     if(computer === 'scissors'){
-        result = ' you win'
+        result = ' you win nice'
     }
 
     what.innerHTML = result;
 
-    alert(`You picked rock, the computer picked ${computer},${result}`)
+   
 })
 
 
@@ -56,15 +56,14 @@ paper.addEventListener('click', () =>{
 
     let result = '';
     if(computer === 'rock'){
-        result = ' tie'
+        result = ' tie bruh'
     }
     if(computer === 'paper'){
-        result = ' you lose'
+        result = ' you lose haha loser'
     }
     if(computer === 'scissors'){
-        result = ' you win'
+        result = ' you win nice'
     }
-
 
     what.innerHTML = result;
 
@@ -89,16 +88,29 @@ scissors.addEventListener('click', () =>{
 
     let result = '';
     if(computer === 'rock'){
-        result = ' tie'
+        result = ' tie bruh'
     }
     if(computer === 'paper'){
-        result = ' you lose'
+        result = ' you lose haha loser'
     }
     if(computer === 'scissors'){
-        result = ' you win'
+        result = ' you win nice'
     }
 
     what.innerHTML = result;
 
    
 })
+
+// hello
+let thing;
+
+const cap = (string) => {
+    for (let i = 0; i <= string.length; i++){
+        if(i % 2 === 0){
+            string[i].toUpperCase();
+        }
+    }
+}
+
+console.log(cap('hello'))
