@@ -102,15 +102,3 @@ scissors.addEventListener('click', () =>{
    
 })
 
-// hello
-let thing;
-
-const cap = (string) => {
-    for (let i = 0; i <= string.length; i++){
-        if(i % 2 === 0){
-            string[i].toUpperCase();
-        }
-    }
-}
-
-console.log(cap('hello'))
