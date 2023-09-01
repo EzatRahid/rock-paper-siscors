@@ -107,8 +107,20 @@
 const prompt = require('prompt-sync')();
 
 let unit = prompt('Choose either fahrenhiet or celsius to convert to the opposite (f or c): ')
-let numUnit = parseFloat(unit)
+if(unit = 'c' || 'C'){
+    let num = prompt('Enter the degrees in celsius to convert to fahrenheit: ')
+    toFahr();
+}else if(unit = 'f' || 'F'){
+    let num = prompt('Enter the degrees in fahrenheit to convert to celsius: ')
+    toCels()
+}
 
-const toCel = () =>{
-    
+
+const toFahr = () =>{
+    const fahr = num * (9/5) + 32
+    return fahr 
+}
+const toCels = () =>{
+    const cels = num -32 * (5/9)
+    return cels 
 }
