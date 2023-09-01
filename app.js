@@ -106,21 +106,23 @@
 
 const prompt = require('prompt-sync')();
 
-let unit = prompt('Choose either fahrenhiet or celsius to convert to the opposite (f or c): ')
-if(unit = 'c' || 'C'){
-    let num = prompt('Enter the degrees in celsius to convert to fahrenheit: ')
-    toFahr();
-}else if(unit = 'f' || 'F'){
-    let num = prompt('Enter the degrees in fahrenheit to convert to celsius: ')
-    toCels()
-}
 
-
-const toFahr = () =>{
+const toFahr = (num) =>{
     const fahr = num * (9/5) + 32
     return fahr 
 }
-const toCels = () =>{
-    const cels = num -32 * (5/9)
+const toCels = (num) =>{
+    const cels = (num -32) * (5/9)
     return cels 
+}
+
+let unit = prompt('Choose either fahrenhiet or celsius to convert to the opposite (f or c): ')
+if(unit === 'c' || 'C'){
+    let num = prompt('Enter the degrees in celsius to convert to fahrenheit: ')
+    let fahrenheit = toFahr(num);
+    console.log(`${num} degrees celsius is ${fahrenheit} degress fahrenheit`)
+}else if(unit === 'f' || 'F'){
+    let num = prompt('Enter the degrees in fahrenheit to convert to celsius: ')
+    let celsius = toCels(num)
+    console.log(`${num} degrees fahrenheit is ${celsius} degress celsius`)
 }
