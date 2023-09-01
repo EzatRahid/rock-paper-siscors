@@ -1,122 +1,122 @@
-let rock = document.getElementById('rock')
-let paper = document.getElementById('paper')
-let scissors = document.getElementById('scissors')
+// let rock = document.getElementById('rock')
+// let paper = document.getElementById('paper')
+// let scissors = document.getElementById('scissors')
 
-let what = document.getElementById('what')
+// let what = document.getElementById('what')
 
-let wins = document.getElementById('wins')
-let loss = document.getElementById('loss')
-let ties= document.getElementById('ties')
-console.log(wins,loss,ties)
+// let wins = document.getElementById('wins')
+// let loss = document.getElementById('loss')
+// let ties= document.getElementById('ties')
+// console.log(wins,loss,ties)
 
-const score = {
-    wins:0,
-    losses:0,
-    ties:0
-}
+// const score = {
+//     wins:0,
+//     losses:0,
+//     ties:0
+// }
 
 
 
-rock.addEventListener('click', () => {
-    let computer = '';
-    const randomNum = Math.random();
+// rock.addEventListener('click', () => {
+//     let computer = '';
+//     const randomNum = Math.random();
     
-    if (randomNum < 1/3) {
-        computer = 'rock';
-    } else if (randomNum < 2/3) {
-        computer = 'paper';
-    } else {
-        computer = 'scissors';
-    }
+//     if (randomNum < 1/3) {
+//         computer = 'rock';
+//     } else if (randomNum < 2/3) {
+//         computer = 'paper';
+//     } else {
+//         computer = 'scissors';
+//     }
 
-    let result = '';
-    if (computer === 'rock') {
-        result = 'tie bruh';
-    } else if (computer === 'paper') {
-        result = 'you lose haha loser';
-    } else {
-        result = 'you win nice';
-    }
+//     let result = '';
+//     if (computer === 'rock') {
+//         result = 'tie bruh';
+//     } else if (computer === 'paper') {
+//         result = 'you lose haha loser';
+//     } else {
+//         result = 'you win nice';
+//     }
 
-    what.innerHTML = result;
+//     what.innerHTML = result;
 
-    if(result === 'you win nice'){
-        wins.innerHTML = `Wins: ${score.wins += 1}`
-    }
-    else if(result === 'you lose haha loser'){
-        loss.innerHTML = `Losses: ${score.losses += 1}`
-    } else if(result === 'tie bruh'){
-        ties.innerHTML = `Ties: ${score.ties += 1}`
-    }
-});
+//     if(result === 'you win nice'){
+//         wins.innerHTML = `Wins: ${score.wins += 1}`
+//     }
+//     else if(result === 'you lose haha loser'){
+//         loss.innerHTML = `Losses: ${score.losses += 1}`
+//     } else if(result === 'tie bruh'){
+//         ties.innerHTML = `Ties: ${score.ties += 1}`
+//     }
+// });
 
-paper.addEventListener('click', () => {
-    // Same logic as the 'rock' event listener, adjusted for 'paper'
-    let computer = '';
-    const randomNum = Math.random();
+// paper.addEventListener('click', () => {
+//     // Same logic as the 'rock' event listener, adjusted for 'paper'
+//     let computer = '';
+//     const randomNum = Math.random();
     
-    if (randomNum < 1/3) {
-        computer = 'rock';
-    } else if (randomNum < 2/3) {
-        computer = 'paper';
-    } else {
-        computer = 'scissors';
-    }
+//     if (randomNum < 1/3) {
+//         computer = 'rock';
+//     } else if (randomNum < 2/3) {
+//         computer = 'paper';
+//     } else {
+//         computer = 'scissors';
+//     }
 
-    let result = '';
-    if (computer === 'rock') {
-        result = 'you win nice';
-    } else if (computer === 'paper') {
-        result = 'tie bruh';
-    } else {
-        result = 'you lose haha loser';
-    }
+//     let result = '';
+//     if (computer === 'rock') {
+//         result = 'you win nice';
+//     } else if (computer === 'paper') {
+//         result = 'tie bruh';
+//     } else {
+//         result = 'you lose haha loser';
+//     }
 
-    what.innerHTML = result;
+//     what.innerHTML = result;
 
-    if(result === 'you win nice'){
-        wins.innerHTML = `Wins: ${score.wins += 1}`
-    }
-    else if(result === 'you lose haha loser'){
-        loss.innerHTML = `Losses: ${score.losses += 1}`
-    } else if(result === 'tie bruh'){
-        ties.innerHTML = `Ties: ${score.ties += 1}`
-    }
-});
+//     if(result === 'you win nice'){
+//         wins.innerHTML = `Wins: ${score.wins += 1}`
+//     }
+//     else if(result === 'you lose haha loser'){
+//         loss.innerHTML = `Losses: ${score.losses += 1}`
+//     } else if(result === 'tie bruh'){
+//         ties.innerHTML = `Ties: ${score.ties += 1}`
+//     }
+// });
 
-scissors.addEventListener('click', () => {
-    // Same logic as the 'rock' event listener, adjusted for 'scissors'
-    let computer = '';
-    const randomNum = Math.random();
+// scissors.addEventListener('click', () => {
+//     // Same logic as the 'rock' event listener, adjusted for 'scissors'
+//     let computer = '';
+//     const randomNum = Math.random();
     
-    if (randomNum < 1/3) {
-        computer = 'rock';
-    } else if (randomNum < 2/3) {
-        computer = 'paper';
-    } else {
-        computer = 'scissors';
-    }
+//     if (randomNum < 1/3) {
+//         computer = 'rock';
+//     } else if (randomNum < 2/3) {
+//         computer = 'paper';
+//     } else {
+//         computer = 'scissors';
+//     }
 
-    let result = '';
-    if (computer === 'rock') {
-        result = 'you lose haha loser';
-    } else if (computer === 'paper') {
-        result = 'you win nice';
-    } else {
-        result = 'tie bruh';
-    }
+//     let result = '';
+//     if (computer === 'rock') {
+//         result = 'you lose haha loser';
+//     } else if (computer === 'paper') {
+//         result = 'you win nice';
+//     } else {
+//         result = 'tie bruh';
+//     }
 
-    what.innerHTML = result;
+//     what.innerHTML = result;
 
-    if(result === 'you win nice'){
-        wins.innerHTML = `Wins: ${score.wins += 1}`
-    }
-    else if(result === 'you lose haha loser'){
-        loss.innerHTML = `Losses: ${score.losses += 1}`
-    } else if(result === 'tie bruh'){
-        ties.innerHTML = `Ties: ${score.ties += 1}`
-    }
-});
+//     if(result === 'you win nice'){
+//         wins.innerHTML = `Wins: ${score.wins += 1}`
+//     }
+//     else if(result === 'you lose haha loser'){
+//         loss.innerHTML = `Losses: ${score.losses += 1}`
+//     } else if(result === 'tie bruh'){
+//         ties.innerHTML = `Ties: ${score.ties += 1}`
+//     }
+// });
 
 // TEMP CONVERTER
 
@@ -142,3 +142,17 @@ scissors.addEventListener('click', () => {
 //     let celsius = toCels(num)
 //     console.log(`${num} degrees fahrenheit is ${celsius} degress celsius`)
 // }
+
+const object = {
+    name: 'ezat',
+    height: '6foot 4in',
+    from:'palestine',
+    likes: {
+        basketball: true,
+        coding: true,
+        reading:false,
+        math:true
+    }
+}
+
+console.log(JSON.stringify(object))
