@@ -16,11 +16,18 @@
         </div>
         <div class="results">
             <h1 id="what"></h1>
-            <h1 class="wins" id="wins">Wins:</h1>
-            <h1 class="loss" id="loss">Losses</h1>
-            <h1 class="ties" id="ties">Ties:</h1>
+            <h1 class="wins" id="wins">Wins: 0</h1>
+            <h1 class="loss" id="loss">Losses: 0</h1>
+            <h1 class="ties" id="ties">Ties: 0</h1>
+        </div>
+        <div class="div">
+            <button class="reset" onclick="
+             wins.innerHTML = `Wins: ${score.wins = 0}`;
+             loss.innerHTML =  `Losses: ${score.losses = 0}`
+             ties.innerHTML = `Ties: ${score.ties = 0}` ;
+             ">Reset score</button>
         </div>
     </div>
-<script src="app.js"></script>
+<script src="app.js" defer></script>
 </body>
 </html>
